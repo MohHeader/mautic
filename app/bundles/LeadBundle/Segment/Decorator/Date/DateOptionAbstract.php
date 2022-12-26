@@ -113,7 +113,7 @@ abstract class DateOptionAbstract implements FilterDecoratorInterface
             $dateTimeHelper->modify($modifier);
         }
 
-        return $dateTimeHelper->toLocalString($dateFormat);
+        return $dateTimeHelper->getDateTime()->format($dateFormat);
     }
 
     /**

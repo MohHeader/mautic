@@ -21,7 +21,7 @@ abstract class DateMonthAbstract extends DateOptionAbstract
      */
     protected function getValueForBetweenRange(DateTimeHelper $dateTimeHelper)
     {
-        return $dateTimeHelper->toLocalString('Y-m-%');
+        return $dateTimeHelper->getDateTime()->format('Y-m-%');
     }
 
     /**

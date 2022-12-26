@@ -92,7 +92,7 @@ class DateRelativeInterval implements FilterDecoratorInterface
             $format .= '%';
         }
 
-        return $date->toLocalString($format);
+        return $date->getDateTime()->format($format);
     }
 
     /**
